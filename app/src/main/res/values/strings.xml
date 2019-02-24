@@ -48,4 +48,8 @@
     <string name="shop_five_address">5190 Library Rd, Bethel Park, PA 15102</string>
     <string name="shop_six_name">GetGo</string>
     <string name="shop_six_address">5281 Library Rd, Bethel Park, PA 15102</string>
+    <string name="tab_one_name">Eat</string>
+    <string name="tab_two_name">Recreation</string>
+    <string name="tab_three_name">Services</string>
+    <string name="tab_four_name">Shopping</string>
 </resources>

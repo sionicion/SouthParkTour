@@ -10,35 +10,37 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     private Context appContext;
 
-    public CategoryAdapter(Context context, FragmentManager fm)
-    {super(fm); appContext=context;}
-
-    @Override
-    public Fragment getItem(int position)
-    {
-        if (position == 0)
-        return new EatFragment();
-        else if (position == 1)
-        return new RecreationFragment();
-        else if (position == 2)
-        return new ShoppingFragment();
-        else
-        return new ServicesFragment();
+    public CategoryAdapter(Context context, FragmentManager fm) {
+        super(fm);
+        appContext = context;
     }
 
     @Override
-    public int getCount() {return 4;}
+    public Fragment getItem(int position) {
+        if (position == 0)
+            return new EatFragment();
+        else if (position == 1)
+            return new RecreationFragment();
+        else if (position == 2)
+            return new ShoppingFragment();
+        else
+            return new ServicesFragment();
+    }
 
     @Override
-    public CharSequence getPageTitle(int position)
-    {
+    public int getCount() {
+        return 4;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
         if (position == 0)
-        return "Eat";
+            return appContext.getString(R.string.tab_one_name);
         else if (position == 1)
-        return "Recreation";
+            return appContext.getString(R.string.tab_two_name);
         else if (position == 2)
-        return "Shopping";
+            return appContext.getString(R.string.tab_three_name);
         else
-        return "Services";
+            return appContext.getString(R.string.tab_four_name);
     }
 }

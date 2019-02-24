@@ -15,8 +15,7 @@ public class EatFragment extends Fragment {
     // an instance of the LocationAdapter, we find the ListView, and then set the ListView's
     // adapter. Then we return this rootView to the caller.
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
         final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location(R.string.eat_one_name, R.string.eat_one_address, R.drawable.eat1));
